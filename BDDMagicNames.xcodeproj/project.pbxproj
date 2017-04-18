@@ -12,6 +12,10 @@
 		B02536891EA53D7F00DA5A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02536881EA53D7F00DA5A9B /* Assets.xcassets */; };
 		B025368C1EA53D7F00DA5A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B025368A1EA53D7F00DA5A9B /* Main.storyboard */; };
 		B02536971EA53D7F00DA5A9B /* BDDMagicNamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02536961EA53D7F00DA5A9B /* BDDMagicNamesTests.swift */; };
+		B02536A81EA53D9B00DA5A9B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02536A71EA53D9B00DA5A9B /* Cocoa.framework */; };
+		B02536AD1EA53D9B00DA5A9B /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02536AC1EA53D9B00DA5A9B /* SourceEditorExtension.swift */; };
+		B02536AF1EA53D9B00DA5A9B /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02536AE1EA53D9B00DA5A9B /* SourceEditorCommand.swift */; };
+		B02536B31EA53D9B00DA5A9B /* TestSourceEditor.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B02536A51EA53D9B00DA5A9B /* TestSourceEditor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +26,28 @@
 			remoteGlobalIDString = B02536801EA53D7F00DA5A9B;
 			remoteInfo = BDDMagicNames;
 		};
+		B02536B11EA53D9B00DA5A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02536791EA53D7F00DA5A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B02536A41EA53D9B00DA5A9B;
+			remoteInfo = TestSourceEditor;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B02536B71EA53D9B00DA5A9B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B02536B31EA53D9B00DA5A9B /* TestSourceEditor.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B02536811EA53D7F00DA5A9B /* BDDMagicNames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDDMagicNames.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +59,12 @@
 		B02536921EA53D7F00DA5A9B /* BDDMagicNamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDDMagicNamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02536961EA53D7F00DA5A9B /* BDDMagicNamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDDMagicNamesTests.swift; sourceTree = "<group>"; };
 		B02536981EA53D7F00DA5A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B02536A51EA53D9B00DA5A9B /* TestSourceEditor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TestSourceEditor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02536A71EA53D9B00DA5A9B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B02536AB1EA53D9B00DA5A9B /* TestSourceEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestSourceEditor.entitlements; sourceTree = "<group>"; };
+		B02536AC1EA53D9B00DA5A9B /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		B02536AE1EA53D9B00DA5A9B /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		B02536B01EA53D9B00DA5A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +82,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B02536A21EA53D9B00DA5A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02536A81EA53D9B00DA5A9B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +98,8 @@
 			children = (
 				B02536831EA53D7F00DA5A9B /* BDDMagicNames */,
 				B02536951EA53D7F00DA5A9B /* BDDMagicNamesTests */,
+				B02536A91EA53D9B00DA5A9B /* TestSourceEditor */,
+				B02536A61EA53D9B00DA5A9B /* Frameworks */,
 				B02536821EA53D7F00DA5A9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +109,7 @@
 			children = (
 				B02536811EA53D7F00DA5A9B /* BDDMagicNames.app */,
 				B02536921EA53D7F00DA5A9B /* BDDMagicNamesTests.xctest */,
+				B02536A51EA53D9B00DA5A9B /* TestSourceEditor.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +135,33 @@
 			path = BDDMagicNamesTests;
 			sourceTree = "<group>";
 		};
+		B02536A61EA53D9B00DA5A9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B02536A71EA53D9B00DA5A9B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B02536A91EA53D9B00DA5A9B /* TestSourceEditor */ = {
+			isa = PBXGroup;
+			children = (
+				B02536AC1EA53D9B00DA5A9B /* SourceEditorExtension.swift */,
+				B02536AE1EA53D9B00DA5A9B /* SourceEditorCommand.swift */,
+				B02536B01EA53D9B00DA5A9B /* Info.plist */,
+				B02536AA1EA53D9B00DA5A9B /* Supporting Files */,
+			);
+			path = TestSourceEditor;
+			sourceTree = "<group>";
+		};
+		B02536AA1EA53D9B00DA5A9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B02536AB1EA53D9B00DA5A9B /* TestSourceEditor.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,10 +172,12 @@
 				B025367D1EA53D7F00DA5A9B /* Sources */,
 				B025367E1EA53D7F00DA5A9B /* Frameworks */,
 				B025367F1EA53D7F00DA5A9B /* Resources */,
+				B02536B71EA53D9B00DA5A9B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B02536B21EA53D9B00DA5A9B /* PBXTargetDependency */,
 			);
 			name = BDDMagicNames;
 			productName = BDDMagicNames;
@@ -131,6 +202,23 @@
 			productReference = B02536921EA53D7F00DA5A9B /* BDDMagicNamesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B02536A41EA53D9B00DA5A9B /* TestSourceEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B02536B41EA53D9B00DA5A9B /* Build configuration list for PBXNativeTarget "TestSourceEditor" */;
+			buildPhases = (
+				B02536A11EA53D9B00DA5A9B /* Sources */,
+				B02536A21EA53D9B00DA5A9B /* Frameworks */,
+				B02536A31EA53D9B00DA5A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestSourceEditor;
+			productName = TestSourceEditor;
+			productReference = B02536A51EA53D9B00DA5A9B /* TestSourceEditor.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +240,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = B02536801EA53D7F00DA5A9B;
 					};
+					B02536A41EA53D9B00DA5A9B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 2NT8T636RJ;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = B025367C1EA53D7F00DA5A9B /* Build configuration list for PBXProject "BDDMagicNames" */;
@@ -169,6 +262,7 @@
 			targets = (
 				B02536801EA53D7F00DA5A9B /* BDDMagicNames */,
 				B02536911EA53D7F00DA5A9B /* BDDMagicNamesTests */,
+				B02536A41EA53D9B00DA5A9B /* TestSourceEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +278,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B02536901EA53D7F00DA5A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02536A31EA53D9B00DA5A9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,6 +311,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B02536A11EA53D9B00DA5A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02536AD1EA53D9B00DA5A9B /* SourceEditorExtension.swift in Sources */,
+				B02536AF1EA53D9B00DA5A9B /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +327,11 @@
 			isa = PBXTargetDependency;
 			target = B02536801EA53D7F00DA5A9B /* BDDMagicNames */;
 			targetProxy = B02536931EA53D7F00DA5A9B /* PBXContainerItemProxy */;
+		};
+		B02536B21EA53D9B00DA5A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B02536A41EA53D9B00DA5A9B /* TestSourceEditor */;
+			targetProxy = B02536B11EA53D9B00DA5A9B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -327,13 +442,16 @@
 		B025369C1EA53D7F00DA5A9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2NT8T636RJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BDDMagicNames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timshadel.BDDMagicNames;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,13 +459,16 @@
 		B025369D1EA53D7F00DA5A9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2NT8T636RJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BDDMagicNames/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timshadel.BDDMagicNames;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -384,6 +505,42 @@
 			};
 			name = Release;
 		};
+		B02536B51EA53D9B00DA5A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TestSourceEditor/TestSourceEditor.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestSourceEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timshadel.BDDMagicNames.TestSourceEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B02536B61EA53D9B00DA5A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TestSourceEditor/TestSourceEditor.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestSourceEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timshadel.BDDMagicNames.TestSourceEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +560,7 @@
 				B025369D1EA53D7F00DA5A9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B025369E1EA53D7F00DA5A9B /* Build configuration list for PBXNativeTarget "BDDMagicNamesTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +569,16 @@
 				B02536A01EA53D7F00DA5A9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B02536B41EA53D9B00DA5A9B /* Build configuration list for PBXNativeTarget "TestSourceEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02536B51EA53D9B00DA5A9B /* Debug */,
+				B02536B61EA53D9B00DA5A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
